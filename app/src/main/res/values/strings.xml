@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Badokan</string>
+    <string name="App_title">Makanan khas daerah Jawa Timur</string>
+    <string name="food_name">Nama Makanan</string>
+    <string name="food_location">Asal Makanan</string>
+    <string name="food_rating">9.5</string>
+    <string name="food_description">Deskripsi Makanan</string>
+    <string name="source">Sumber</string>
+    <string name="author">Novian Dwi Syahrizal Hilmi</string>
+    <string name="author_email">noviandsh@gmail.com</string>
+</resources>

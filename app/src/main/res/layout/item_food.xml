@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="8dp"
+    android:layout_gravity="center"
+    app:cardCornerRadius="6dp"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:padding="8dp"
+        android:background="@color/black_bg_soft">
+
+        <ImageView
+            android:id="@+id/img_food"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="8dp"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/ayam_lodho" />
+
+        <TextView
+            android:id="@+id/tv_food_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toEndOf="@id/img_food"
+            android:layout_toRightOf="@id/img_food"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:fontFamily="@font/arima_madurai_bold"
+            android:text="@string/food_name"/>
+
+        <ImageView
+            android:id="@+id/location_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_food_name"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/img_food"
+            android:background="@drawable/ic_baseline_location_on_24" />
+
+        <TextView
+            android:id="@+id/tv_food_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_below="@+id/tv_food_name"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="4dp"
+            android:textSize="13sp"
+            android:layout_toEndOf="@id/location_icon"
+            android:text="@string/food_location" />
+
+        <ImageView
+            android:id="@+id/rating_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_baseline_star_24"
+            android:layout_toEndOf="@id/img_food"
+            android:layout_below="@id/location_icon"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_food_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:layout_below="@+id/tv_food_location"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="4dp"
+            android:layout_toEndOf="@id/rating_icon"
+            android:text="@string/food_rating"/>
+
+        <Button
+            android:id="@+id/btn_set_favorite"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/ic_baseline_favorite_border_24" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
